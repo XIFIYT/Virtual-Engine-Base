@@ -9,7 +9,7 @@ A mod menu base for Grand Theft Auto V. Developed by Virtual Engine Team
 - curl
 - json
 
-#Cmake Used 
+# Cmake Used 
 - Cmake tuto -> https://www.youtube.com/watch?v=9fowTjLimxQ
 
 # Info
