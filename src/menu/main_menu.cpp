@@ -216,7 +216,6 @@ namespace Big
 	}
 	void MainMenu::Tick() {
 		g_MainMenu->Init();
-		GetScaleform()->DrawLargeMessage("~b~Virtual Engine", "Welcome to Virtual Engine Service", 600);
 		while (true) {
 			g_Render->OnTick();
 			Script::GetCurrent()->ScriptYield();
