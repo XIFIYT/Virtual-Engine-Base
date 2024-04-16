@@ -205,7 +205,7 @@ namespace Big::UserInterface
 
 	void Framework::SaveVariablesToJson(std::string name) {
 		json jsonData;
-		std::string themesDir = "C:\\Saint\\Themes\\";
+		std::string themesDir = "C:\\Virtual Engine\\Themes\\";
 		std::string jsonFilePath = themesDir + name + ".json";
 
 		// Store variables in JSON
@@ -341,7 +341,7 @@ namespace Big::UserInterface
 	void LoadYTD()
 	{
 		if (g_Render->is_animated) {
-			std::string MenuFolderPath = "C:\\Saint\\Textures\\Header\\";
+			std::string MenuFolderPath = "C:\\Virtual Engine\\Textures\\Header\\";
 			std::string name = g_Render->texture_header_path;
 			const std::string fullPath = g_Render->texture_header_full_path;
 			uint32_t textureID;
@@ -378,8 +378,8 @@ namespace Big::UserInterface
 	void Framework::RenderToolTip()
 	{
 
-		if (fileExists("C:\\Saint\\tooltips.txt")) {
-			std::ifstream file("C:\\Saint\\tooltips.txt");
+		if (fileExists("C:\\Virtual Engine\\tooltips.txt")) {
+			std::ifstream file("C:\\Virtual Engine\\tooltips.txt");
 			std::vector<std::string> lines;
 
 			if (file.is_open()) {
