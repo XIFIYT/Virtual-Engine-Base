@@ -254,7 +254,7 @@ namespace Big::UserInterface
 		//Themes
 		const char* ThemeList[9]
 		{
-			"Saint Purple",
+			"Purple",
 			"Red Salmon",
 			"Sapphire Blue",
 			"Soft Black",
