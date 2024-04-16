@@ -37,9 +37,9 @@ namespace Big
 	
 	void MainMenu::Init() {
 		using namespace UserInterface;
-		g_CustomText->AddText(CONSTEXPR_JOAAT("HUD_JOINING"), "Lucid is the BEST MOD MENU EVER !");
-		g_CustomText->AddText(CONSTEXPR_JOAAT("HUD_TRANSP"), "Lucid is the BEST MOD MENU EVER !, Anyways , who is your uncle");
-		g_CustomText->AddText(CONSTEXPR_JOAAT("HUD_QUITTING"), "Leave , but still LUCID ");
+		g_CustomText->AddText(CONSTEXPR_JOAAT("HUD_JOINING"), "Virtual Engine is the BEST MOD MENU EVER !");
+		g_CustomText->AddText(CONSTEXPR_JOAAT("HUD_TRANSP"), "Virtual Engine is the BEST MOD MENU EVER !, Anyways , who is your uncle");
+		g_CustomText->AddText(CONSTEXPR_JOAAT("HUD_QUITTING"), "Leave , but still Virtual Engine ");
 		g_CustomText->AddText(CONSTEXPR_JOAAT("HS_KILLED"), "Fucked Him Up ");
 		g_Render->draw_submenu<sub>("Main Menu", SubmenuHome, [](sub* sub)
 			{
