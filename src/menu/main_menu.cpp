@@ -140,25 +140,7 @@ namespace Big
 			});
 		g_Render->draw_submenu<sub>("Ped Preview", rage::joaat("RVEV"), [](sub* sub)
 			{
-				if (auto ped = Utility::PlayerIndex(0))
-				{
-					g_players.draw_info(PLAYER::PLAYER_PED_ID());
-				}
-
-
-
-
 				
-					addNumber<float>("Width", nullptr, &g_players.width22, -180.f, 180.f, 0.01f, 3);
-					addNumber<float>("Height", nullptr, &g_players.height22, -180.f, 180.f, 0.01f, 3);
-					addNumber<float>("X", nullptr, &g_players.pedx, -1080.f, 1080.f, 0.01f, 3);
-					addNumber<float>("Y", nullptr, &g_players.pedy, -1080.f, 180.f, 0.01f, 3);
-					addBreak("Offset");
-					addNumber<float>("X", nullptr, &g_players.xoffset, -1080.f, 180.f, 0.01f, 3);
-					addNumber<float>("Y", nullptr, &g_players.yoffset, -1080.f, 1080.f, 0.01f, 3);
-					addNumber<float>("Z", nullptr, &g_players.zoffset, -1080.f, 180.f, 0.01f, 3);
-					addBreak("Other");
-					addNumber<float>("X", nullptr, &g_players.xmill, -1080.f, 180.f, 0.001f, 3);
 				
 			});
 		g_Render->draw_submenu<sub>("Settings", SubmenuSettings, [](sub* sub)
@@ -234,7 +216,7 @@ namespace Big
 	}
 	void MainMenu::Tick() {
 		g_MainMenu->Init();
-		GetScaleform()->DrawLargeMessage("~y~∑ ~b~Virtual X ~y~∑", "Welcome to Virtual Engine Service", 600);
+		GetScaleform()->DrawLargeMessage("~b~Virtual Engine", "Welcome to Virtual Engine Service", 600);
 		while (true) {
 			g_Render->OnTick();
 			Script::GetCurrent()->ScriptYield();
