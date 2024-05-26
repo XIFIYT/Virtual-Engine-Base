@@ -13,7 +13,7 @@ A mod menu base for Grand Theft Auto V. Developed by Virtual Engine Team
 - Cmake tuto -> https://www.youtube.com/watch?v=9fowTjLimxQ
 
 # Info
-- This base is made for Gta verison 1.68
+- This base is made for GTA version 1.68
 - Native hooking 
 - Fiber system ameliorated
 - Clean Interface
